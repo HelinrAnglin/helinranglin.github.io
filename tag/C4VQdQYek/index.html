@@ -1,0 +1,241 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    123 | Helinr Anglin
+</title>
+<link rel="shortcut icon" href="https://helinranglin.github.io/favicon.ico?v=1663183083475">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://helinranglin.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://helinranglin.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://helinranglin.github.io">
+                <img class="avatar" src="https://helinranglin.github.io/images/avatar.png?v=1663183083475" alt="">
+            </a>
+            <a href="https://helinranglin.github.io">
+                <div class="site-title">
+                    <h1>
+                        Helinr Anglin
+                    </h1>
+                </div>
+            </a>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        123</b>
+    </div>
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://helinranglin.github.io/post/ce-shi/">
+                        测试
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-09-14</time>
+                    
+                        <a href="https://helinranglin.github.io/tag/C4VQdQYek/" class="post-tag i-tag
+                            i-tag-other_3">
+            #123
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://helinranglin.github.io/post/ce-shi/" class="post-feature-image" style="background-image:url(https://helinranglin.github.io/post-images/ce-shi.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>😀235262</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://helinranglin.github.io/post/ce-shi/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+
+                <script>
+                    const date = new Date();
+                    const today = date.toISOString().substring(0, 10);
+                    console.info(today)
+                    $.ajax({
+                        url: `http://sentence.iciba.com/index.php?c=dailysentence&m=getdetail&title=${today}`,
+                        type: "GET",
+                        dataType: "jsonp", //指定服务器返回的数据类型
+                        success: function (data) {
+                            $(".null-feature-image").css("background-image", `url(${data.picture2})`);
+                            console.log(data);
+                        }
+                    });
+                </script>
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar">
+            <img src="https://helinranglin.github.io/images/avatar.png?v=1663183083475">
+        </div>
+        <h1 class="id_card-title">
+            Helinr Anglin
+        </h1>
+        <h2 class="id_card-description">
+            个人博客
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/HelinrAnglin" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+                                        <!-- douban -->
+                                        
+
+        </div>
+    </div>
+    
+    <script>
+        // const date = new Date();
+        // const today = date.toISOString().substring(0, 10);
+        // console.info(today)
+        // $.ajax({
+        //     url: `http://sentence.iciba.com/index.php?c=dailysentence&m=getdetail&title=${today}`,
+        //     type: "GET",
+        //     dataType: "jsonp", //指定服务器返回的数据类型
+        //     success: function (data) {
+        //         $(".id_card-description").text(data.content)
+        //         console.log(data);
+        //     }
+        // });
+    </script>
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            随便说说
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://helinranglin.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
+</html>
